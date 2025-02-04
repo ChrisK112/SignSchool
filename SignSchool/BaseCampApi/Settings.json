@@ -1,0 +1,10 @@
+﻿  {
+    "ClientId": "58108be6af33000fd7ca131c1dae089b8c9f3b37",
+    "ClientSecret": "4a92738463b201317208aa879084e0f31ca0cd0b",
+    "ApplicationName": "SSS_Connection",
+    "Contact": "https://www.elovate.co.uk/",
+    "RedirectURI": "https://client.telebank-online.com/SignSchool/Login.aspx",
+    "CompanyId": "5555067"
+  }
+
+

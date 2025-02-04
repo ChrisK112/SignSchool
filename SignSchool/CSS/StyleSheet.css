@@ -1,0 +1,128 @@
+﻿body {
+}
+
+#Login1 {
+    margin: auto;
+}
+
+#loginbox {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.Logout_div, .Sidebar_menu {
+    display: flex;
+    justify-content: flex-end;
+    flex: auto;
+}
+
+.Date_Button {
+    margin-left: 5%;
+    width: 20%;
+}
+
+#Topbar_div {
+    display: flex;
+}
+
+.PageTitle {
+    text-align: center;
+}
+
+#Menu1{
+    font-weight: bold;
+}
+
+.mydatagrid {
+    width: 100%;
+    border: solid 2px black;
+    min-width: 80%;
+    word-wrap: break-word;
+    max-height: 95%;
+}
+
+.mydatagridUsers {
+    width: 80%;
+    border: solid 2px black;
+    word-wrap: break-word;
+    max-height: 95%;
+}
+
+.mydatagridIMPORT {
+    width: 100%;
+    border: solid 2px black;
+    min-width: 80%;
+    word-wrap: break-word;
+    max-height: 95%;
+}
+
+.mydatagridDUPS {
+    width: 100%;
+    border: solid 2px black;
+    min-width: 80%;
+    word-wrap: break-word;
+    max-height: 30%;
+}
+
+.header {
+    background-color: #E3EAEB;
+    font-family: Arial;
+    color: #1C5E55;
+    height: 25px;
+    max-height: 50px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.rows, .rows_editgrid {
+    background-color: #fff;
+    font-family: Arial;
+    font-size: 14px;
+    color: #000;
+    min-height: 25px;
+    max-height: 50px;
+    text-align: left;
+    overflow: hidden;
+}
+
+    .rows:hover {
+        background-color: #1C5E55;
+        color: #fff;
+    }
+
+.mydatagrid a /** FOR THE PAGING ICONS **/ {
+    background-color: Transparent;
+    padding: 5px 5px 5px 5px;
+    color: #1C5E55;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .mydatagrid a:hover /** FOR THE PAGING ICONS HOVER STYLES**/ {
+        background-color: #1C5E55;
+        color: #fff;
+    }
+
+.mydatagrid span /** FOR THE PAGING ICONS CURRENT PAGE INDICATOR **/ {
+    background-color: #fff;
+    color: #1C5E55;
+    padding: 5px 5px 5px 5px;
+}
+
+.pager {
+    background-color: #E3EAEB;
+    font-family: Arial;
+    color: White;
+    height: 30px;
+    text-align: left;
+}
+
+.mydatagrid td {
+    padding: 5px;
+}
+
+.mydatagrid th {
+    padding: 5px;
+}

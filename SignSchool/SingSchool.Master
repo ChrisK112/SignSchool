@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SingSchool.Master.cs" Inherits="SignSchool.Site1" %>
+
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="CSS/StyleSheet.css" type="text/css">
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="Topbar_div">
+            <asp:Menu ID="Menu1" Orientation="Horizontal" runat="server" BackColor="#E3EAEB" DynamicHorizontalOffset="0" DynamicVerticalOffset="0" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#1C5E55" StaticSubMenuIndent="10px">
+                <DynamicHoverStyle BackColor="#1C5E55" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="3px" />
+                <DynamicMenuStyle BackColor="#E3EAEB" />
+                <DynamicSelectedStyle BackColor="#1C5E55" ForeColor="White" />
+                <DynamicItemTemplate>
+                    <%# Eval("Text") %>
+                </DynamicItemTemplate>
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                    <asp:MenuItem Text="Browse Data" Value="Browse Data">
+                        <asp:MenuItem NavigateUrl="~/BrowseNeedPrintData.aspx" Text="Need Printing" Value="Need Printing"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/BrowseLiveData.aspx" Text="Live Records" Value="Live Records"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/BrowseCancelledData.aspx" Text="Cancelled Records" Value="Cancelled Records"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Browse12PacksData.aspx" Text="12 Packs Sent" Value="12 Packs Sent"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/BrowseSentData.aspx" Text="Sent Packs" Value="Need Printing"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Lables" Value="Lables">
+                        <asp:MenuItem NavigateUrl="~/DownloadLabels.aspx" Text="Download Lables" Value="Download Lables"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/ConfirmLabels.aspx" Text="Confirm Lables" Value="Confirm Lables"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Import Data" Value="Import Data">
+                        <asp:MenuItem NavigateUrl="~/ImportData.aspx" Text="New Records" Value="New Records"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/ImportCancellations.aspx" Text="Cancellations" Value="Cancellations"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/ImportReactivationData.aspx" Text="Reactivations" Value="Reactivations"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/ImportAddressData.aspx" Text="Address Change" Value="Cancellations"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Edit Data" Value="Edit Data">
+                        <asp:MenuItem NavigateUrl="~/EditRecordSearch.aspx" Text="Edit Record" Value="Search/Edit Record"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/CancelRecordSearch.aspx" Text="Cancel Record" Value="Cancel Record"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/RestoreCancelledRecordSearch.aspx" Text="Restore Cancelled Record" Value="Restore Cancelled Record"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/EditHoliday.aspx" Text="Edit Holiday" Value="Edit Holiday"></asp:MenuItem>
+                    </asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#1C5E55" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticSelectedStyle BackColor="#507CD1" />
+            </asp:Menu>
+            <div class="Logout_div">
+                <asp:LoginStatus ID="LoginStatus1" runat="server" />
+            </div>
+
+        </div>
+        <div class="Sidebar_menu">
+                <asp:LinkButton ID="UserConfigButton" runat="server" OnClick="UserConfigButton_Click" Style="display:none">User Configuration</asp:LinkButton>
+            </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
