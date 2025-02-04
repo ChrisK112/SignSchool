@@ -27,9 +27,9 @@ namespace SignSchool
             var values = new Dictionary<string, string>
               {
                     { "type", "web_server" },
-                  { "client_id", "58108be6af33000fd7ca131c1dae089b8c9f3b37" },
-                  { "redirect_uri", "https://client.telebank-online.com/SignSchool/Login.aspx"},
-                { "client_secret", "4a92738463b201317208aa879084e0f31ca0cd0b" },
+                  { "client_id", "-----" },
+                  { "redirect_uri", "-----"},
+                { "client_secret", "-----" },
                 { "code", code }
               };
 
